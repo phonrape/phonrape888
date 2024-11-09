@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พอร์ตโฟลิโอของพีรพล นวลทอง</title>
+    <style>
+        /* การตั้งค่าเบื้องต้น */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* เลย์เอาท์หลัก */
+        .container {
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 1100px;
+            padding: 40px;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 40px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* รูปโปรไฟล์ */
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ข้อมูลส่วนตัว */
+        .content-section {
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        .content-section h2 {
+            font-size: 1.8em;
+            color: #3498db;
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .content-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            margin: 8px 0;
+            transition: color 0.3s;
+        }
+
+        .highlight {
+            color: #8e44ad;
+            font-weight: 600;
+        }
+
+        .content-section p:hover {
+            color: #3498db;
+        }
+
+        /* เพิ่มแอนิเมชัน */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ปรับปุ่มในหน้า */
+        .btn {
+            padding: 12px 25px;
+            font-size: 1.1em;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #8e44ad;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ปรับฟุตเตอร์ */
+        footer {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #3498db;
+        }
+
+        /* รูปแบบการแสดงผลบนมือถือ */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            .content-section h2 {
+                font-size: 1.5em;
+            }
+
+            .profile-img {
+                width: 130px;
+                height: 130px;
+            }
+
+            .content-section p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>พอร์ตโฟลิโอของพีรพล นวลทอง</h1>
+        </header>
+
+        <!-- รูปโปรไฟล์ -->
+        <img src="profile.jpg" alt="Profile Image" class="profile-img">
+
+        <!-- ข้อมูลส่วนตัว -->
+        <div class="content-section">
+            <h2>ข้อมูลส่วนตัว</h2>
+            <p><span class="highlight">ชื่อ:</span> พีรพล นวลทอง</p>
+            <p><span class="highlight">ระดับชั้น:</span> ม.5</p>
+            <p><span class="highlight">เกรดเฉลี่ย:</span> 4.00</p>
+            <p><span class="highlight">ความชอบในการเขียนโปรแกรม:</span> ผมมีความสนใจในการเขียนโปรแกรมตั้งแต่เด็กและเริ่มเรียนรู้การเขียนโปรแกรมตั้งแต่ชั้นมัธยมต้น โดยสนุกกับการแก้ปัญหาด้วยการใช้โค้ด ซึ่งทำให้ผมต้องการเรียนรู้และพัฒนาทักษะการเขียนโปรแกรมอย่างต่อเนื่อง</p>
+        </div>
+
+        <!-- ทักษะและความสนใจ -->
+        <div class="content-section">
+            <h2>ทักษะและความสนใจ</h2>
+            <p>ผมสนใจการเขียนโปรแกรมในหลายๆ ภาษา เช่น Python, JavaScript และ HTML/CSS ผมชื่นชอบการเรียนรู้เทคโนโลยีใหม่ๆ และนำมาใช้แก้ปัญหาต่างๆ ที่เกิดขึ้นในชีวิตประจำวัน รวมถึงการสร้างโครงการหรือแอปพลิเคชันที่สามารถใช้ได้จริง</p>
+        </div>
+
+        <!-- เป้าหมายในอนาคต -->
+        <div class="content-section">
+            <h2>เป้าหมายในอนาคต</h2>
+            <p>ในอนาคตผมตั้งใจที่จะศึกษาต่อในด้านวิทยาการคอมพิวเตอร์ เพื่อพัฒนาทักษะการเขียนโปรแกรมให้ดีขึ้น และนำความรู้ที่ได้รับมาใช้ในการสร้างสรรค์นวัตกรรมต่างๆ ที่สามารถช่วยพัฒนาสังคมและประเทศชาติได้</p>
+        </div>
+
+        <!-- ปุ่ม -->
+        <a href="mailto:example@example.com" class="btn">ติดต่อฉัน</a>
+
+        <!-- Footer -->
+        <footer>
+            <p>ออกแบบโดย <a href="https://www.yourwebsite.com">พีรพล นวลทอง</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
